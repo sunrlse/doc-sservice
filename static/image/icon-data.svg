@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="17px" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>编组 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="运营数据icon" transform="translate(-42.000000, -341.000000)" stroke="#FFFFFF" stroke-width="1.2">
+            <g id="编组-2" transform="translate(42.000000, 341.000000)">
+                <g id="编组-5" transform="translate(0.000000, 0.000000)">
+                    <rect id="矩形" x="0.6" y="0.6" width="14.8" height="10.5333333" rx="2"></rect>
+                    <polyline id="路径-4" points="3.55244962 8.47758197 5.97024914 5.05201979 8.94675238 7.09181005 12.085783 3.2"></polyline>
+                    <line x1="8" y1="16" x2="8" y2="11.7333333" id="直线-3备份"></line>
+                    <line x1="4.20833333" y1="15.4666667" x2="11.5583333" y2="15.5" id="直线-3" stroke-linecap="round"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

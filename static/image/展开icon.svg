@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="19px" viewBox="0 0 24 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>展开icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon切图1" transform="translate(-203.000000, -125.000000)">
+            <g id="展开icon" transform="translate(201.000000, 120.000000)">
+                <rect id="矩形" fill="#D8D8D8" opacity="0" x="0" y="0" width="28" height="28"></rect>
+                <path d="M3.52380952,6.5 L24.2986333,6.5 L3.52380952,6.5 Z M3.52380952,14.5 L24.2986333,14.5 L3.52380952,14.5 Z M3.52380952,22.5 L24.2986333,22.5 L3.52380952,22.5 Z" id="形状结合" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

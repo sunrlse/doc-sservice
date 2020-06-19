@@ -1,6 +1,5 @@
 const Router = require('koa-router')
 const fs = require('fs')
-const os = require('os')
 const path = require('path')
 
 const router = new Router({
@@ -17,15 +16,18 @@ function checkFileType(str) {
   if (str.indexOf('audio/') > -1) {
     return 'audio'
   }
-  return 'files'
+  return 'other'
 }
 
 const handleUpload = async (ctx, next) => {
   console.log('======================================================')
   console.log(ctx.request.files)
-  const files = ctx.request.files['file[]']
+  const received_files = ctx.request.files['file[]']
+  const files = Array.isArray(received_files) ? received_files : [received_files];
   const succMap = {}
+  const succFiles = []
   for (let i = 0; i < files.length; i++) {
+
     let file = files[i]
     const filename = file.name
     const fileType = checkFileType(file.type);
@@ -41,23 +43,26 @@ const handleUpload = async (ctx, next) => {
     console.log('文件名： ', filename, '  ', stream.path)
     console.log('-------------uploading----------')
     // ctx.body = 'ok'
-    
     succMap[filename] = accessPath
-
+    succFiles.push({
+      name: filename,
+      src: accessPath,
+      type: fileType
+    })
   }
+
+
+
   ctx.body = {
     msg: 'ok',
     code: 0,
     data: {
       errFiles: [],
+      succFiles,
       succMap
     }
   }
 }
-
-router.get('/123', ctx => {
-  ctx.body = 'next'
-})
 
 router.post('/doc/upload', handleUpload)
 
